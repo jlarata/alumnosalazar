@@ -5,13 +5,43 @@ var alumnes = []
 var primera = 0;
 
 
+function AzarTotal() {
+  alumnxs = document.querySelectorAll('.columna1');
+
+  /* arma un array tomando los valores de la columna1*/
+  for(var i=0; i<alumnxs.length; i++){
+    alumne = alumnxs[i].innerHTML;
+    insertarAlumne(alumne);
+    }
+
+  /* borra los valores de la columna 1 */
+  for(var i=0; i<alumnxs.length; i++){
+    alumnxs[i].innerHTML = ''
+    }
+
+  /* vuelve a agregar los valores */
+
+  for(var i=0; i<alumnxs.length; i++){
+
+    var nroalumne = Math.floor(Math.random() * alumnes.length)
+    var data = alumnes[nroalumne];
+    alumnes.splice(nroalumne, 1);
+    var node = document.createTextNode(data);
+    alumnxs[i].appendChild(node);
+
+        }
+
+
+  }
+
+
 function masAzar() {
   alumnxs = document.querySelectorAll('.columna1');
 
   /* arma un array tomando los valores de la columna1*/
   for(var i=0; i<alumnxs.length; i++){
     alumne = alumnxs[i].innerHTML;
-    reordenarAlumnes(alumne);
+    insertarAlumne(alumne);
     }
 
   /* borra los valores de la columna 1 */
@@ -36,7 +66,7 @@ function masAzar() {
 
 
 
-function reordenarAlumnes(alumnx) {
+function insertarAlumne(alumnx) {
   alumnes.splice(0, 0, alumnx)
   }
 
