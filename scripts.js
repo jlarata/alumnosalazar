@@ -60,17 +60,11 @@ function masAzar() {
 
         }
 
-
   }
-
-
-
 
 function insertarAlumne(alumnx) {
   alumnes.splice(0, 0, alumnx)
   }
-
-
 
 function randomStudents () {
 
@@ -101,3 +95,7 @@ function meterNumeros() {
       primera = 1;
 
   }
+
+function chequeado(esto) {
+  esto.classList.toggle("chequeado");
+};
