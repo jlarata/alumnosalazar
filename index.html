@@ -1,26 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>alumnos al azar</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alumnos al azar</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
 </head>
 
 <body>
-    <header>
-      <div class="header">
-      <h1>hello, alumnes!</h1>
+  <div class="header-container">
+  <header class="header">
+    <div class="saludo">
+      <h1>¡Hola alumnxs!</h1>
+    </div>
+  </header>
+  </div>
+
+  <main>
+
+    <!-- 2024 -->
+    <div class="cajavertical">
+
+      <div class="fila">
+        <div class="columna1" onclick="chequeado(this)">
+          ALANOCA
+        </div>
+        <div class="columna2">
+        </div>
       </div>
-    </header>
 
-    <main>
+      <div class="fila">
+        <div class="columna1" onclick="chequeado(this)">
+          ARRIOLA
+        </div>
+        <div class="columna2">
+        </div>
+      </div>
 
-      <div class="cajavertical">
+      <div class="fila">
+        <div class="columna1" onclick="chequeado(this)">
+          BAPTISTA MRCAICH
+        </div>
+        <div class="columna2">
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="columna1" onclick="chequeado(this)">
+          BRITEZ SANCHEZ
+        </div>
+        <div class="columna2">
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="columna1" onclick="chequeado(this)">
+          CARDOZO MORALES
+        </div>
+        <div class="columna2">
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="columna1" onclick="chequeado(this)">
+          CHEN WANG
+        </div>
+        <div class="columna2">
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="columna1" onclick="chequeado(this)">
+          CONDORI QUISPE
+        </div>
+        <div class="columna2">
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="columna1" onclick="chequeado(this)">
+          DE OLIVEIRA BILHALVA
+        </div>
+        <div class="columna2">
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="columna1" onclick="chequeado(this)">
+          FLORES MITMA
+        </div>
+        <div class="columna2">
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="columna1" onclick="chequeado(this)">
+          ISOLDI
+        </div>
+        <div class="columna2">
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="columna1" onclick="chequeado(this)">
+          LIN
+        </div>
+        <div class="columna2">
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="columna1" onclick="chequeado(this)">
+          MASOLINI LAURINI
+        </div>
+        <div class="columna2">
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="columna1" onclick="chequeado(this)">
+          MEALLA
+        </div>
+        <div class="columna2">
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="columna1" onclick="chequeado(this)">
+          PANIGHETTI
+        </div>
+        <div class="columna2">
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="columna1" onclick="chequeado(this)">
+          SCHNIPER RICCI
+        </div>
+        <div class="columna2">
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="columna1" onclick="chequeado(this)">
+          SEJEM
+        </div>
+        <div class="columna2">
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="columna1" onclick="chequeado(this)">
+          TOCCI
+        </div>
+        <div class="columna2">
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="columna1" onclick="chequeado(this)">
+          ZAMORA
+        </div>
+        <div class="columna2">
+        </div>
+      </div>
+    </div>
+
+    <div class="botonera">
+      <button class="btn" onclick="AzarTotal()">Alumnos al azar!</button>
+      <button class="btn" onclick="randomStudents()">Numeros al azar!</button>
+    </div>
+    <div class="botonera">
+      <button class="btn" onclick="masAzar()">LOS JUEGOS DEL HAMBRE!</button>
+    </div>
+
+
+
+    <!--2022 <div class="cajavertical">
 
         <div class="fila">
           <div class="columna1" onclick="chequeado(this)">
@@ -230,11 +391,12 @@
       </div>
       <div class="botonera">
         <button class="btn" onclick="masAzar()">LOS JUEGOS DEL HAMBRE!</button>
-      </div>
-    </main>
+      </div> -->
+  </main>
 
-    <footer>
-    </footer>
+  <footer>
+  </footer>
 </body>
 <script src="scripts.js"></script>
+
 </html>
